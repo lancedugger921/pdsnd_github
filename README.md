@@ -4,6 +4,10 @@ Created on 10/23/19
 ### Project Title
 Bikeshare Project
 
+###Version
+Anaconda 2019.07
+Python 3.7.3
+
 ### Description
 This project allows the user to interact with the terminal and explored Bikeshare data from three different cities.
 
