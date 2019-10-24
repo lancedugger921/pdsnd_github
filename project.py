@@ -188,7 +188,8 @@ def user_stats(df):
     print('-'*40)
 
 def raw_data(df):
-    """Displays raw data in sets of five.  Allows the user to determine if they want to continue to see raw data sets or exit."""
+    """Displays raw data in sets of five.  Allows the user to determine if
+    they want to continue to see raw data sets or exit."""
     #used stackoverflow for assistance, see note 3 in readme.txt
     #drops data that was created during the program
     df.drop(['month','day_of_week','hour','combo'], axis=1,inplace=True)
