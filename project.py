@@ -138,7 +138,6 @@ def trip_duration_stats(df):
 
     # display total travel time
     #used geeksforgeeks for assistance, see note 2 in readme.txt
-    start_time = time.time()
     total_time = df['Trip Duration'].sum()
     min, sec = divmod(total_time, 60)
     hour, min = divmod(min, 60)
@@ -150,7 +149,6 @@ def trip_duration_stats(df):
     hour, min = divmod(min, 60)
     print('Mean Trip Duration: {} hours, {} minutes, and {} seconds.'.format(int(hour),int(min),int(sec)))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -158,7 +156,6 @@ def user_stats(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
-    start_time = time.time()
 
     # Display counts of user types
     user_counts = df['User Type'].value_counts()
@@ -179,7 +176,6 @@ def user_stats(df):
     except KeyError:
         print('No Birth Year Data')
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 def raw_data(df):
