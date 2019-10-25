@@ -100,7 +100,6 @@ def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
-    start_time = time.time()
 
     # display most commonly used start station
     start_station = df['Start Station'].value_counts()
@@ -129,8 +128,6 @@ def station_stats(df):
         if combo_values.values[i] == combo_values_max:
             combo_values_list.append(combo_values.index[i])
     print('Popular Station Combo: ', combo_values_list)
-
-    print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
